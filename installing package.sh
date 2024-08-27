@@ -6,8 +6,7 @@ G="\e[32m"
 N="\e[0m"
 
 CHECK_POINT(){
-
-    if[ $USERID -ne 0 ]
+    if [ $USERID -ne 0 ]
     then 
         echo " login with root privilege"
         exit 1
@@ -15,8 +14,7 @@ CHECK_POINT(){
 }
 
 Validate(){
-
-    if[ $1 -ne 0 ]
+    if [ $1 -ne 0 ]
     then 
         echo -e "$2 is...$R FAILED $N"
         exit 1
