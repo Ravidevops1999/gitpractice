@@ -6,7 +6,7 @@ G="\e[32m"
 N="\e[0m"
 
 CHECK_POINT(){
-    if[ $USERID -ne 0]
+    if [ $USERID -ne 0 ]
     then 
         echo " login with root privilege"
         exit 1
