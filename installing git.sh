@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo " Please login with root user"
     exit 1
@@ -10,11 +10,11 @@ fi
 
 dnf list installed git -y
 
-if[ $? -ne 0]
+if[ $? -ne 0 ]
 then
     echo " git is not installed going to install it"
     dnf install git -y
-    if [ $? -ne 0]
+    if [ $? -ne 0 ]
     then 
         echo " git installion is not success... please check"
     else
