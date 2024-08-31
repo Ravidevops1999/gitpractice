@@ -6,4 +6,4 @@ do
     do
         echo "word = '$word'"
     done
-done <"output.txt"
+done <"$file"
