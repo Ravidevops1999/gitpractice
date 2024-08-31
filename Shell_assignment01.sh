@@ -8,7 +8,7 @@
 #     done
 # done <"$file"
 
-sort /var/shell/output.txt | uniq -c | sort -nr | while read count name
+sort "/var/shell/output.txt" | uniq -c | sort -nr | while read count name
 do
     if [ ${count} -gt 1 ]
     then 
