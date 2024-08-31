@@ -1,4 +1,4 @@
- !/bin/bash
+ #!/bin/bash
 # file="/var/shell/output.txt"
 # while read line; 
 # do
@@ -16,10 +16,9 @@ do
     while read count word in $line; 
     do
         if [ $count -gt 1 ]
-
-        echo "word = '$word'" | echo "$count"
+            echo "word = '$word'" | echo "$count"
+        fi
     done
-    
 done <"$file"
 
 
