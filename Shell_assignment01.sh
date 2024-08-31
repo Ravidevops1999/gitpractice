@@ -16,6 +16,7 @@ do
     while read count word in $line; 
     do
         if [ $count -gt 1 ]
+        then
             echo "word = '$word'" | echo "$count"
         fi
     done
