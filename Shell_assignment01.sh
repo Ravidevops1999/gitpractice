@@ -1,5 +1,5 @@
 #!/bin/bash
-file="/var/log/shell/output.txt"
+file="/var/shell/output.txt"
 while read line; 
 do
     for word in $line; 
